@@ -14,6 +14,12 @@
     href: designing-your-app/designing-tabs.md
   - name: Messaging extensions
     href: designing-your-app/designing-messaging-extensions.md
+  - name: Meeting extensions
+    items:
+    - name: Notification modals
+      href: designing-your-app/designing-meeeting-notification-modals.md
+    - name: Right pane
+      href: designing-your-app/designing-meeeting-right-pane.md
   - name: Bots
     href: designing-your-app/designing-bots.md
   - name: Webhooks and connectors
