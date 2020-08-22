@@ -24,22 +24,6 @@
     href: designing-your-app/designing-bots.md
   - name: Webhooks and connectors
     href: designing-your-app/designing-connectors.md
-  - name: UI components
-    items: 
-    - name: Cards
-      href: designing-your-app/designing-cards.md
-    - name: Task modules
-      href: designing-your-app/designing-task-modules.md
-    - name: Colors
-      href: concepts/design/components/color.md
-    - name: Buttons, links, and controls
-      href: concepts/design/components/buttons.md
-    - name: Typography
-      href: concepts/design/components/typography.md
-    - name: Fields and flyouts
-      href: concepts/design/components/fields.md
-    - name: Dialogs
-      href: concepts/design/components/dialogs.md
   - name: Other considerations
     href: designing-your-app/designing-other-considerations.md
   - name: Resources
