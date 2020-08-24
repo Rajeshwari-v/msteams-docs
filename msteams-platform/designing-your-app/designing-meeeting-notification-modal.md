@@ -16,7 +16,7 @@ You might create a notification modal so users can:
 * Submit approvals
 * Get reminders
 
-### Example
+## Example
 
 The following example shows what a notification modal might look like from a meeting participant's perspective.
 
@@ -35,28 +35,28 @@ Notification modals are responsive and have the following dimensions:
 
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-anatomy.png" alt-text="Alt text here." border="false":::
 
-1. **Avatar**: User who triggered the event.
+1. **Avatar**: User who initiated the notification modal.
 1. **App attribution**: Icon and name.
-1. **Action string**: Describes what the user who triggere the event is doing.
+1. **Action string**: Describes what the user who initiated the modal wants to do.
 1. **More actions**: Provides options on hover that include:
-   * Muting notifications from the app during the meeting
-   * Dismiss all content bubbles on the screen
+   * Mute notifications from the app during the meeting
+   * Dismiss all notifications on the screen
    * Manage notification settings
    * Use an action-based messaging extension
    * Expand the notification on the meeting stage
 1. **Dimiss**: Dismisses a single notification. Always use the upper-right close icon.
-1. **Actions**: Optional; if needed for your use case.
+1. **Actions**: Optional; depends on your use case.
 1. **Input error**: When required, displays a short error message.
-1. **Aggregate count**: When required, displays if there's more than one active content bubble. Count includes all apps.
-1. **Webview**: Displays all third-party content. [See webview dimensions](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A8829)
+1. **Aggregate count**: When required, shows if there's more than one active modal (count includes all apps).
+1. **Webview**: Displays all third-party content. Learn about [webview dimensions](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A8829).
 
 ## Behavior
 
 Remember if your notification modal requires scrolling:
 
-* You should only be able to scroll vertically
-* You can only see the content you've scrolled to (nothing above or below)
-* The scrollbar is part of the webview content
+* You should only be able to scroll vertically.
+* You can only see the content you've scrolled to (nothing above or below).
+* The scrollbar is part of the webview content.
 
 :::row:::
    :::column span="":::
@@ -74,10 +74,10 @@ Notification modals are built primarily with the following UI components (which 
 Component | Guidelines | Example
  - | - | -
 [Button](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10089) | Primary and secondary buttons can be medium or small | Send a response
-[Input](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102) | Field for user input. Label text can include an icon  | Enter feedback
+[Input](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102) | Field for brief user input. Label text can include an icon  | Enter feedback
 [Dropdown](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10115) | Select one or more options from a list. Can include search and multi-selection features | Choose a language
 [Selection controls](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10128) | Use checkboxes for multiple choices or radio buttons and toggles for single choices. For more detailed selections, use a slider | Vote in a poll
-[Error banners](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be brief and won't interrupt the user's current task | Display issue when submitting a response
+[Error banners](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be short and won't interrupt the user's current task | Display issue when submitting a response
 
 ## Theming
 
@@ -156,7 +156,7 @@ You may be able to design a single modal with multiple interactions, but too man
    :::column span="":::
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-layout-do.png" alt-text="Alt text here." border="false":::
 
-#### Do: Use a single-column layout
+#### Do: Use single-column layouts
 
 Since modals are at the center of the meeting stage, task completion should be fast and simple to avoid user frustration.
 
@@ -164,7 +164,7 @@ Since modals are at the center of the meeting stage, task completion should be f
    :::column span="":::
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-layout-dont.png" alt-text="Alt text here." border="false":::
 
-#### Don't: Clutter the modal
+#### Don't: Clutter the space
 
 Dense content can be distracting and overwhelming, especially during a meeting.
 
@@ -179,7 +179,7 @@ Dense content can be distracting and overwhelming, especially during a meeting.
 
 #### Do: Use a consistent size
 
-Notification modals always display in the same location.
+Important because notification modals always display in the same location.
 
    :::column-end:::
    :::column span="":::
