@@ -5,7 +5,7 @@ description: Guidance and best practices for designing meeting extensions in a M
 ---
 # Designing a meeting extension notification modal
 
-Notification modals display on the Teams meeting stage for simple user interactions. They're a subtle way to capture input that doesn't interrupt the meeting.
+Notification modals display on the Teams meeting stage for simple user interactions. They're a subtle way to quickly capture input that doesn't interrupt the meeting.
 
 ## Use cases
 
@@ -77,7 +77,7 @@ Component | Guidelines | Example
 [Input](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102) | Field for user input. Label text can include an icon  | Enter feedback
 [Dropdown](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10115) | Select one or more options from a list. Can include search and multi-selection features | Choose a language
 [Selection controls](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10128) | Use checkboxes for multiple choices or radio buttons and toggles for single choices. For more detailed selections, use a slider | Vote in a poll
-[Error banners](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be brief and won't interrupt the user's current task | Issue when submitting a response
+[Error banners](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be brief and won't interrupt the user's current task | Display issue when submitting a response
 
 ## Theming
 
@@ -105,7 +105,7 @@ While notification modals can make meetings more effective, they also can derail
 
 #### Do: Keep it contained
 
-Meetings are optimized for dark mode to help reduce visual and cognitive noise so users can focus on the meeting.
+Limit modal content to a single screen so users can focus on the meeting.
 
    :::column-end:::
    :::column span="":::
@@ -113,7 +113,7 @@ Meetings are optimized for dark mode to help reduce visual and cognitive noise s
 
 #### Don't: Include multiple steps
 
-Avoid navigating through the content.
+Modals shouldn't require users to navigate through content.
 
    :::column-end:::
 :::row-end:::
@@ -137,7 +137,7 @@ Avoid navigating through the content.
 
 #### Do: Limit interactions
 
-Remove unnecessary elements or content that doesn't help the user accomplish something quickly. If you need a complex set of interaction, use a single column on the right pane instead.
+Remove unnecessary content that doesn't help users accomplish something quickly. If you need complex interactions, use a single column on the right pane instead.
 
    :::column-end:::
    :::column span="":::
@@ -145,7 +145,7 @@ Remove unnecessary elements or content that doesn't help the user accomplish som
 
 #### Don't: Use complex interactions
 
-Avoid making users navigate through content on the notification modal. You may think a modal can hold multiple interactions, but too many distracts from the meeting.
+You may be able to design a single modal with multiple interactions, but too many can distract from the meeting.
 
    :::column-end:::
 :::row-end:::
