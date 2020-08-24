@@ -31,6 +31,8 @@ The following example shows what a notification modal might look like from the p
     > [!div class="nextstepaction"]
     > [See other examples](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A10461)
    :::column-end:::
+   :::column span="":::
+   :::column-end:::
 :::row-end:::
 
 [See the full scenario](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=208%3A9816)
