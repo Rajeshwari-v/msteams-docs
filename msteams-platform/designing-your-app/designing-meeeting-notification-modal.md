@@ -5,7 +5,7 @@ description: Guidance and best practices for designing meeting extensions in a M
 ---
 # Designing a meeting extension notification modal
 
-Notification modals display on the Teams meeting stage and require simple user interactions. They're a subtle way to capture participants' input that doesn't interrupt the meeting.
+Notification modals display on the Teams meeting stage for simple user interactions. They're a subtle way to capture input that doesn't interrupt the meeting.
 
 ## Use cases
 
@@ -18,7 +18,7 @@ You might create a notification modal so users can:
 
 ### Example
 
-The following example shows what a notification modal might look like from the perspective of a meeting participant.
+The following example shows what a notification modal might look like from a meeting participant's perspective.
 
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-participant-view.png" alt-text="Alt text here.":::
 
@@ -33,7 +33,7 @@ Notification modals are responsive and have the following dimensions:
 * **Width**: Minimum 280 pixels and maximum 460 pixels
 * **Height**: 400 pixels (300 for the content area)
 
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-anatomy.png" alt-text="Alt text here." border="false" lightbox="../assets/images/calls-and-meetings/notification-modal-anatomy.png":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-anatomy.png" alt-text="Alt text here." border="false":::
 
 1. **Avatar**: User who triggered the event.
 1. **App attribution**: Icon and name.
@@ -54,9 +54,9 @@ Notification modals are responsive and have the following dimensions:
 
 Remember if your notification modal requires scrolling:
 
-* You should only scroll vertically
+* You should only be able to scroll vertically
 * You can only see the content you've scrolled to (nothing above or below)
-* The scrollbar is part of your webview content
+* The scrollbar is part of the webview content
 
 :::row:::
    :::column span="":::
@@ -77,7 +77,7 @@ Component | Guidelines | Example
 [Input](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102) | Field for user input. Label text can include an icon  | Enter feedback
 [Dropdown](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10115) | Select one or more options from a list. Can include search and multi-selection features | Choose a language
 [Selection controls](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10128) | Use checkboxes for multiple choices or radio buttons and toggles for single choices. For more detailed selections, use a slider | Vote in a poll
-[Error banners](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be brief and won't interrupt the user's current task | Error occurred when submitting a response
+[Error banners](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be brief and won't interrupt the user's current task | Issue when submitting a response
 
 ## Theming
 
@@ -97,7 +97,7 @@ Use the [recommended font sizes and weights](https://www.figma.com/file/QjjWsZYp
 
 While notification modals can make meetings more effective, they also can derail meetings if too obtrusive. In general, use notification modals sparingly and make sure they follow these guidelines.
 
-### Reduce steps and navigation
+### Navigation
 
 :::row:::
    :::column span="":::
@@ -118,17 +118,91 @@ Avoid navigating through the content.
    :::column-end:::
 :::row-end:::
 
-## Mobile considerations
+### Interactions
 
-Text
+:::row:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-interactions-do.png" alt-text="Alt text here." border="false":::
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-interactions-dont.png" alt-text="Alt text here." border="false":::
+
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-do.png" alt-text="Alt text here." border="false":::
+
+#### Do: Limit interactions
+
+Remove unnecessary elements or content that doesn't help the user accomplish something quickly. If you need a complex set of interaction, use a single column on the right pane instead.
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-dont.png" alt-text="Alt text here." border="false":::
+
+#### Don't: Use complex interactions
+
+Avoid making users navigate through content on the notification modal. You may think a modal can hold multiple interactions, but too many distracts from the meeting.
+
+   :::column-end:::
+:::row-end:::
+
+### Layout
+
+:::row:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-layout-do.png" alt-text="Alt text here." border="false":::
+
+#### Do: Use a single-column layout
+
+Since modals are at the center of the meeting stage, task completion should be fast and simple to avoid user frustration.
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-layout-dont.png" alt-text="Alt text here." border="false":::
+
+#### Don't: Clutter the modal
+
+Dense content can be distracting and overwhelming, especially during a meeting.
+
+   :::column-end:::
+:::row-end:::
+
+### Size
+
+:::row:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-size-do.png" alt-text="Alt text here." border="false":::
+
+#### Do: Use a consistent size
+
+Notification modals always display in the same location.
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-size-dont.png" alt-text="Alt text here." border="false":::
+
+#### Don't: Use different sizes
+
+Multiple sizes within the same app is an inconsistent experience.
+
+   :::column-end:::
+:::row-end:::
+
+## Mobile
+
+Some text (may remove)
 
 ## Sample app
 
-Partner showcase and templates.
+Link to sample Contoso app.
 
 ## Resources
 
-* [Full design guidelines](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598)
+* [Full Teams design guidelines](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598)
 
 ## Validate your design
 
