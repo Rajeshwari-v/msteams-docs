@@ -24,39 +24,64 @@ The following example shows what a notification modal might look like from the p
 
 [See the full scenario](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=208%3A9816)
 
-[See other examples](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A10461)
+[See other example use cases](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A10461)
 
 ## Anatomy
 
-Notification modals are responsive with a minimum width of 280 pixels and maximum of 460 pixels. They have a maximum height of 400 pixels (300 for the content area).
+Notification modals are responsive and have the following dimensions:
 
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-anatomy.png" alt-text="Alt text here." border="false":::
+* **Width**: Minimum 280 pixels and maximum 460 pixels
+* **Height**: 400 pixels (300 for the content area)
+
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-anatomy.png" alt-text="Alt text here." border="false" lightbox="../assets/images/calls-and-meetings/notification-modal-anatomy.png":::
 
 1. **Avatar**: User who triggered the event.
 1. **App attribution**: Icon and name.
 1. **Action string**: Describes what the user who triggere the event is doing.
-1. **More actions**: Provides options on hover, including muting notifications from the app during the meeting; dismiss all content bubbles on the screen; manage notification settings; use an action-based messaging extension; or expand the notification on the meeting stage.
+1. **More actions**: Provides options on hover that include:
+   * Muting notifications from the app during the meeting
+   * Dismiss all content bubbles on the screen
+   * Manage notification settings
+   * Use an action-based messaging extension
+   * Expand the notification on the meeting stage
 1. **Dimiss**: Dismisses a single notification. Always use the upper-right close icon.
 1. **Actions**: Optional; if needed for your use case.
 1. **Input error**: When required, displays a short error message.
 1. **Aggregate count**: When required, displays if there's more than one active content bubble. Count includes all apps.
-1. **Webview**: Displays all of your third-party content.
+1. **Webview**: Displays all third-party content. [See webview dimensions](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A8829)
 
-## Best practices
+## Behavior
 
-Text
+Remember if your notification modal requires scrolling:
 
-## Mobile considerations
+* You should only scroll vertically
+* You can only see the content you've scrolled to (nothing above or below)
+* The scrollbar is part of your webview content
 
-Text
+:::row:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-scroll-up.png" alt-text="Alt text here." border="false":::
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-scroll-down.png" alt-text="Alt text here." border="false":::
+   :::column-end:::
+:::row-end:::
 
 ## Components
 
-Text
+Notification modals are built primarily with the following UI components (which are based on the [Fluent UI Design System](https://fluentsite.z22.web.core.windows.net/)).
+
+Component | Guidelines | Example
+ - | - | -
+[Button](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10089) | Primary and secondary buttons can be medium or small | Send a response
+[Input](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10102) | Field for user input. Label text can include an icon  | Enter feedback
+[Dropdown](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10115) | Select one or more options from a list. Can include search and multi-selection features | Choose a language
+[Selection controls](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10128) | Use checkboxes for multiple choices or radio buttons and toggles for single choices. For more detailed selections, use a slider | Vote in a poll
+[Error banners](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=214%3A10141) | Whether displaying an urgent message, error state, or warning, the message should be brief and won't interrupt the user's current task | Error occurred when submitting a response
 
 ## Theming
 
-Text
+These Teams-specific guidelines can help you quickly and confidently choose the right colors and typography.
 
 ### Colors
 
@@ -68,15 +93,42 @@ Use the [recommended color scheme](https://www.figma.com/file/QjjWsZYpNqwjRc3OXT
 
 Use the [recommended font sizes and weights](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15511) for titles, body text, and metadata text.
 
+## Best practices
+
+While notification modals can make meetings more effective, they also can derail meetings if too obtrusive. In general, use notification modals sparingly and make sure they follow these guidelines.
+
+### Reduce steps and navigation
+
+:::row:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-steps-do.png" alt-text="Alt text here." border="false":::
+
+#### Do: Keep it contained
+
+Meetings are optimized for dark mode to help reduce visual and cognitive noise so users can focus on the meeting.
+
+   :::column-end:::
+   :::column span="":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-steps-dont.png" alt-text="Alt text here." border="false":::
+
+#### Don't: Include multiple steps
+
+Avoid navigating through the content.
+
+   :::column-end:::
+:::row-end:::
+
+## Mobile considerations
+
+Text
+
 ## Sample app
 
 Partner showcase and templates.
 
 ## Resources
 
-* Developer section of bots (how to get started)
-* Developer section of cards (how to get started)
-* Developer section of task modules (how to get started)
+* [Full design guidelines](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=254%3A35598)
 
 ## Validate your design
 
