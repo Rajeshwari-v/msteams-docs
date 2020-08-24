@@ -5,7 +5,7 @@ description: Guidance and best practices for designing meeting extensions in a M
 ---
 # Designing a meeting extension notification modal
 
-Notification modals display on the Teams meeting stage for simple user interactions. They're a subtle way to quickly capture input that doesn't interrupt the meeting.
+Notification modals display on the Teams meeting stage for simple user interactions. They're a subtle way to quickly and efficiently capture input that doesn't interrupt the meeting.
 
 ## Use cases
 
@@ -44,7 +44,7 @@ Notification modals are responsive and have the following dimensions:
    * Manage notification settings
    * Use an action-based messaging extension
    * Expand the notification on the meeting stage
-1. **Dimiss**: Dismisses a single notification. Always use the upper-right close icon.
+1. **Dismiss**: Dismisses a single notification. Always use the upper-right close icon.
 1. **Actions**: Optional; depends on your use case.
 1. **Input error**: When required, displays a short error message.
 1. **Aggregate count**: When required, shows if there's more than one active modal (count includes all apps).
@@ -111,7 +111,7 @@ Limit modal content to a single screen so users can focus on the meeting.
    :::column span="":::
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-steps-dont.png" alt-text="Alt text here." border="false":::
 
-#### Don't: Include multiple steps
+#### Don't: Include multiple layers
 
 Modals shouldn't require users to navigate through content.
 
@@ -143,7 +143,7 @@ Remove unnecessary content that doesn't help users accomplish something quickly.
    :::column span="":::
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-dont.png" alt-text="Alt text here." border="false":::
 
-#### Don't: Use complex interactions
+#### Don't: Have complex interactions
 
 You may be able to design a single modal with multiple interactions, but too many can distract from the meeting.
 
@@ -177,7 +177,7 @@ Dense content can be distracting and overwhelming, especially during a meeting.
    :::column span="":::
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-size-do.png" alt-text="Alt text here." border="false":::
 
-#### Do: Use a consistent size
+#### Do: Keep it consistent
 
 Important because notification modals always display in the same location.
 
@@ -185,9 +185,9 @@ Important because notification modals always display in the same location.
    :::column span="":::
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-size-dont.png" alt-text="Alt text here." border="false":::
 
-#### Don't: Use different sizes
+#### Don't: Always fit to the content
 
-Multiple sizes within the same app is an inconsistent experience.
+You may be trying to avoid horizontal scrolling, but multiple modal sizes within the same app is an inconsistent experience.
 
    :::column-end:::
 :::row-end:::
