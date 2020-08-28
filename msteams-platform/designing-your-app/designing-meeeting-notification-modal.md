@@ -2,23 +2,25 @@
 title: Designing Microsoft Teams meeting extensions
 author: heath-hamilton
 description: Guidance and best practices for designing meeting extensions in a Microsoft Teams app.
+ms.author: heath-hamilton
+ms.topic: conceptual
 ---
 # Designing a meeting extension notification modal
 
-Notification modals display on the Teams meeting stage for simple user interactions. They're a subtle way to quickly and efficiently capture input that doesn't interrupt the meeting.
+Meeting notification modals display on the Teams meeting stage for simple user interactions. They're a subtle way to quickly and efficiently capture input that doesn't interrupt the meeting.
 
 ## Use cases
 
-You might create a notification modal so users can:
+You might create a meeting notification modal so users can:
 
 * Provide brief feedback
 * Take a short survey
 * Submit approvals
-* Get reminders
+* Get reminders (for example, "You're presenting next.")
 
 ## Example
 
-The following example shows what a notification modal might look like from a meeting participant's perspective.
+The following example shows what the modal might look like from a meeting participant's perspective. As you can see, the content and task are lightweight.
 
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-participant-view.png" alt-text="Alt text here.":::
 
@@ -28,31 +30,31 @@ The following example shows what a notification modal might look like from a mee
 
 ## Anatomy
 
-Notification modals are responsive and have the following dimensions:
+Meeting notification modals are responsive and have the following dimensions:
 
 * **Width**: Minimum 280 pixels and maximum 460 pixels
-* **Height**: 400 pixels (300 for the content area)
+* **Height**: Auto height with a maximum 400 pixels (300 for the content area)
 
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-anatomy.png" alt-text="Alt text here." border="false":::
 
-1. **Avatar**: User who initiated the notification modal.
-1. **App attribution**: Icon and name.
-1. **Action string**: Describes what the user who initiated the modal wants to do.
+1. **Avatar**: User who initiated the modal.
+1. **App attribution**: App icon and name.
+1. **Action string**: Describes what the user who initiated the modal wants to do: [*User*][*action*].
 1. **More actions**: Provides options on hover that include:
-   * Mute notifications from the app during the meeting
-   * Dismiss all notifications on the screen
-   * Manage notification settings
-   * Use an action-based messaging extension
-   * Expand the notification on the meeting stage
+   * Mute notifications from the app during the meeting.
+   * Dismiss all notifications on the screen.
+   * Manage notification settings.
+   * Use an action-based messaging extension.
+   * Expand the notification on the meeting stage.
 1. **Dismiss**: Dismisses a single notification. Always use the upper-right close icon.
-1. **Actions**: Optional; depends on your use case.
+1. **Actions**: Optional (depends on your use case).
 1. **Input error**: When required, displays a short error message.
 1. **Aggregate count**: When required, shows if there's more than one active modal (count includes all apps).
 1. **Webview**: Displays all third-party content. Learn about [webview dimensions](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=218%3A8829).
 
 ## Behavior
 
-Remember if your notification modal requires scrolling:
+Remember if your meeting notification modal requires scrolling:
 
 * You should only be able to scroll vertically.
 * You can only see the content you've scrolled to (nothing above or below).
@@ -69,7 +71,7 @@ Remember if your notification modal requires scrolling:
 
 ## Components
 
-Notification modals are built primarily with the following UI components (which are based on the [Fluent UI Design System](https://fluentsite.z22.web.core.windows.net/)).
+Meeting notification modals are built primarily with the following UI components (which are based on the [Fluent UI Design System](https://fluentsite.z22.web.core.windows.net/)).
 
 Component | Guidelines | Example
  - | - | -
@@ -85,7 +87,7 @@ These Teams-specific guidelines can help you quickly and confidently choose the 
 
 ### Colors
 
-Use the [recommended color scheme](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=280%3A4030) for backgrounds, foregrounds, and conveying states in notification modals.
+Use the [recommended color scheme](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=280%3A4030) for backgrounds, foregrounds, and conveying states in meeting notification modals.
 
 [See the full color scheme](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=257%3A15339)
 
@@ -95,7 +97,7 @@ Use the [recommended font sizes and weights](https://www.figma.com/file/QjjWsZYp
 
 ## Best practices
 
-While notification modals can make meetings more effective, they also can derail meetings if too obtrusive. In general, use notification modals sparingly and make sure they follow these guidelines.
+While meeting notification modals can make calls more effective, they also can derail calls if too obtrusive. Allowing the organizer to share this content and participants to quickly view and interact with it is paramount to a good experience. In general, use the modals sparingly and make sure they follow these guidelines.
 
 ### Navigation
 
@@ -111,7 +113,7 @@ Limit modal content to a single screen so users can focus on the meeting.
    :::column span="":::
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-steps-dont.png" alt-text="Alt text here." border="false":::
 
-#### Don't: Include multiple layers
+#### Don't: Include multiple steps
 
 Modals shouldn't require users to navigate through content.
 
@@ -135,15 +137,15 @@ Modals shouldn't require users to navigate through content.
    :::column span="":::
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-do.png" alt-text="Alt text here." border="false":::
 
-#### Do: Limit interactions
+#### Do: Limit the number of possible interactions
 
-Remove unnecessary content that doesn't help users accomplish something quickly. If you need complex interactions, use a single column on the right pane instead.
+Remove unnecessary content that doesn't help users accomplish something quickly. If you need complex interactions, we strongly recommend using a single column on the meeting right pane instead.
 
    :::column-end:::
    :::column span="":::
 :::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-dont.png" alt-text="Alt text here." border="false":::
 
-#### Don't: Have complex interactions
+#### Don't: Introduce unnecessary elements
 
 You may be able to design a single modal with multiple interactions, but too many can distract from the meeting.
 
@@ -179,7 +181,7 @@ Dense content can be distracting and overwhelming, especially during a meeting.
 
 #### Do: Keep it consistent
 
-Important because notification modals always display in the same location.
+This is important because notification modals always display in the same location.
 
    :::column-end:::
    :::column span="":::
