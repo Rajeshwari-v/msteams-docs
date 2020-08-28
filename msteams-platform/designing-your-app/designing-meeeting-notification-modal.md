@@ -22,7 +22,7 @@ You might create a meeting notification modal so users can:
 
 The following example shows what the modal might look like from a meeting participant's perspective. As you can see, the content and task are lightweight.
 
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-participant-view.png" alt-text="Alt text here.":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-participant-view.png" alt-text="Example shows what the meeting notification modal might look like from a meeting participant's perspective.":::
 
 [See the full scenario](https://www.figma.com/file/QjjWsZYpNqwjRc3OXTgBpp/Principles-and-guidelines?node-id=208%3A9816)
 
@@ -35,7 +35,7 @@ Meeting notification modals are responsive and have the following dimensions:
 * **Width**: Minimum 280 pixels and maximum 460 pixels
 * **Height**: Auto height with a maximum 400 pixels (300 for the content area)
 
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-anatomy.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-anatomy.png" alt-text="Illustration showing the UI anatomy of a meeting notification modal." border="false":::
 
 1. **Avatar**: User who initiated the modal.
 1. **App attribution**: App icon and name.
@@ -62,10 +62,10 @@ Remember if your meeting notification modal requires scrolling:
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-scroll-up.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-scroll-up.png" alt-text="Illustration showing how scrolling the webview content works in the meeting notification modal works." border="false":::
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-scroll-down.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-scroll-down.png" alt-text="Illustration showing how scrolling the webview content works in the meeting notification modal works." border="false":::
    :::column-end:::
 :::row-end:::
 
@@ -103,7 +103,7 @@ While meeting notification modals can make calls more effective, they also can d
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-steps-do.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-steps-do.png" alt-text="Illustration showing how to limit modal content to a single screen so users can focus on the meeting." border="false":::
 
 #### Do: Keep it contained
 
@@ -111,7 +111,7 @@ Limit modal content to a single screen so users can focus on the meeting.
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-steps-dont.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-steps-dont.png" alt-text="Illustration showing how modals shouldn't require users to navigate through content." border="false":::
 
 #### Don't: Include multiple steps
 
@@ -124,18 +124,18 @@ Modals shouldn't require users to navigate through content.
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-interactions-do.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-interactions-do.png" alt-text="Illustration showing why you should remove unnecessary content that doesn't help users accomplish something quickly." border="false":::
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-interactions-dont.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-interactions-dont.png" alt-text="Another illustration showing why you should remove unnecessary content that doesn't help users accomplish something quickly." border="false":::
 
    :::column-end:::
 :::row-end:::
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-do.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-do.png" alt-text="Illustration showing that, if you need complex interactions, it's recommended you use a single column on the meeting right pane instead." border="false":::
 
 #### Do: Limit the number of possible interactions
 
@@ -143,7 +143,7 @@ Remove unnecessary content that doesn't help users accomplish something quickly.
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-dont.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-right-pane-dont.png" alt-text="Illustration showing that too many interactions in the modal distracts from the meeting." border="false":::
 
 #### Don't: Introduce unnecessary elements
 
@@ -156,7 +156,7 @@ You may be able to design a single modal with multiple interactions, but too man
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-layout-do.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-layout-do.png" alt-text="Illustration showing an ideal layout for meeting notification modals." border="false":::
 
 #### Do: Use single-column layouts
 
@@ -164,7 +164,7 @@ Since modals are at the center of the meeting stage, task completion should be f
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-layout-dont.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-layout-dont.png" alt-text="Illustration showing layout for meeting notification modals that isn't recommended." border="false":::
 
 #### Don't: Clutter the space
 
@@ -177,7 +177,7 @@ Dense content can be distracting and overwhelming, especially during a meeting.
 
 :::row:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-size-do.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-size-do.png" alt-text="Illustration showing how the modal size should always be the same." border="false":::
 
 #### Do: Keep it consistent
 
@@ -185,7 +185,7 @@ This is important because notification modals always display in the same locatio
 
    :::column-end:::
    :::column span="":::
-:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-size-dont.png" alt-text="Alt text here." border="false":::
+:::image type="content" source="../assets/images/calls-and-meetings/notification-modal-size-dont.png" alt-text="Illustration showing how you shouldn't use different modal sizes." border="false":::
 
 #### Don't: Always fit to the content
 
