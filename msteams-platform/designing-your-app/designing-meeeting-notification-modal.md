@@ -1,5 +1,5 @@
 ---
-title: Designing Microsoft Teams meeting extensions
+title: Designing a Microsoft Teams meeting extension notification modal
 author: heath-hamilton
 description: Guidance and best practices for designing meeting extensions in a Microsoft Teams app.
 ms.author: heath-hamilton
